@@ -75,6 +75,13 @@ cargo_kit_spet_cargo = [
 	[]
 ];
 
+cargo_kit_cargo_sil = [
+	[],
+	[],
+	[["CUP_muzzle_PBS4",15],["CUP_muzzle_snds_groza",15],["CUP_muzzle_snds_SR3M",10]],
+	[]
+];
+
 
 kit_spet_sl = [
 	["<EQUIPEMENT >>  ",spet_u,"rhs_6b5_rifleman_khaki","tf_mr3000_rhs",spet_h,spet_g],
@@ -88,14 +95,14 @@ kit_spet_sl = [
 ];
 
 kit_spet_r = [
-	["<EQUIPEMENT >>  ",spet_u,"rhs_6b5_rifleman_khaki","CUP_B_AlicePack_Khaki",spet_h,spet_g],
+	["<EQUIPEMENT >>  ",spet_u,"rhs_6b5_rifleman_khaki","",spet_h,spet_g],
 	["<PRIMARY WEAPON >>  ",spet_w_r,spet_a_r,["","","",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhs_weap_6p53","rhs_18rnd_9x21mm_7N28",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
 	["<VEST ITEMS >> ",[["HANDGUN MAG",2],["CUP_HandGrenade_RGD5",2],["PRIMARY MAG",7]]],
-	["<BACKPACK ITEMS >> ",[["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",2],["rhs_mag_zarya2",1]]]
+	["<BACKPACK ITEMS >> ",[]]
 ];
 
 kit_spet_ar = [
@@ -106,17 +113,6 @@ kit_spet_ar = [
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS_L]],
 	["<VEST ITEMS >> ",[["HANDGUN MAG",1],["CUP_HandGrenade_RGD5",2],["PRIMARY MAG",5],["rhs_mag_zarya2",1]]],
-	["<BACKPACK ITEMS >> ",[]]
-];
-
-kit_spet_at = [
-	["<EQUIPEMENT >>  ",spet_u,"rhs_6b5_rifleman_khaki","",spet_h,spet_g],
-	["<PRIMARY WEAPON >>  ",spet_w_r,spet_a_r,["","","",""]],
-	["<LAUNCHER WEAPON >>  ","rhs_weap_rshg2","rhs_rshg2_mag",["","","",""]],
-	["<HANDGUN WEAPON >>  ","rhs_weap_6p53","rhs_18rnd_9x21mm_7N28",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
-	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
-	["<VEST ITEMS >> ",[["HANDGUN MAG",2],["CUP_HandGrenade_RGD5",1],["PRIMARY MAG",7],["rhs_mag_zarya2",1]]],
 	["<BACKPACK ITEMS >> ",[]]
 ];
 
@@ -133,7 +129,7 @@ kit_spet_gr = [
 
 kit_spet_mm = [
 	["<EQUIPEMENT >>  ",spet_u,"rhs_6b5_sniper_khaki","","CUP_H_RUS_Altyn",spet_g],
-	["<PRIMARY WEAPON >>  ","CUP_srifle_VSSVintorez","CUP_20Rnd_9x39_SP5_VSS_M",["","","CUP_optic_PSO_1",""]],
+	["<PRIMARY WEAPON >>  ","CUP_srifle_VSSVintorez","CUP_20Rnd_9x39_SP5_VSS_M",["","","CUP_optic_PSO_1_1",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhs_weap_6p53","rhs_18rnd_9x21mm_7N28",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
@@ -158,7 +154,7 @@ kit_Spet_svd = [
 	["<PRIMARY WEAPON >>  ","CUP_srifle_SVD_wdl","10Rnd_762x54_Mag",["","","CUP_optic_PSO_1",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhs_weap_6p53","rhs_18rnd_9x21mm_7N28",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
 	["<VEST ITEMS >> ",[["PRIMARY MAG",6],["HANDGUN MAG",2]]],
 	["<BACKPACK ITEMS >> ",[]]
@@ -169,10 +165,32 @@ kit_Spet_svd2 = [
 	["<PRIMARY WEAPON >>  ","CUP_srifle_SVD","CUP_10Rnd_762x54_SVD_M",["","","CUP_optic_PSO_1",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhs_weap_6p53","rhs_18rnd_9x21mm_7N28",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
 	["<VEST ITEMS >> ",[["HANDGUN MAG",2],["PRIMARY MAG",6]]],
 	["<BACKPACK ITEMS >> ",[]]
+];
+
+kit_spet_rshg2 = [
+	["<EQUIPEMENT >>  ",spet_u,"rhs_6b5_rifleman_khaki","CUP_B_AlicePack_Khaki",spet_h,spet_g],
+	["<PRIMARY WEAPON >>  ",spet_w_r,spet_a_r,["","","",""]],
+	["<LAUNCHER WEAPON >>  ","rhs_weap_rshg2","rhs_rshg2_mag",["","","",""]],
+	["<HANDGUN WEAPON >>  ","rhs_weap_6p53","rhs_18rnd_9x21mm_7N28",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["HANDGUN MAG",2],["CUP_HandGrenade_RGD5",1],["PRIMARY MAG",7],["rhs_mag_zarya2",1]]],
+	["<BACKPACK ITEMS >> ",[["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",2]]]
+];
+
+kit_spet_gm94 = [
+	["<EQUIPEMENT >>  ",spet_u,"rhs_6b5_rifleman_khaki","CUP_B_AlicePack_Khaki",spet_h,spet_g],
+	["<PRIMARY WEAPON >>  ","CUP_arifle_AS_VAL","CUP_20Rnd_9x39_SP5_VSS_M",["","","",""]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","rhs_weap_6p53","rhs_18rnd_9x21mm_7N28",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["HANDGUN MAG",2],["CUP_HandGrenade_RGD5",2],["PRIMARY MAG",6]]],
+	["<BACKPACK ITEMS >> ",[["dzn_weapon_GM94",1],["dzn_3Rnd_VGM93_100_Mag",6],["dzn_3Rnd_VGM93_300_Mag",2],["dzn_3Rnd_VGM93_400_Mag",2]]]
 ];
 
 kit_cdf_crew = [

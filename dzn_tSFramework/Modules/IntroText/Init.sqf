@@ -13,7 +13,7 @@ if (hasInterface) then {
 			]
 		};
 		
-		if (tSF_Intro_LineText2 == "г. Черногорск, Черноруссия") then {
+		if (tSF_Intro_LineText2 == "Район Н, Страна Н, Регион Н") then {
 			tSF_Intro_LineText2 = "";
 		};
 		if (tSF_Intro_LineText3 == "Операция 'Без имени'") then {
